@@ -299,8 +299,6 @@ alias p='sudo pacman-color'
 alias y='yaourt'
 alias h='htop'
 alias mc='cd /home/lozzow/game/minecraft &&java  -jar HMCL-2.2.8.jar  &&exit'
-alias shao='sslocal -s 107.189.153.247 -m rc4-MD5 -k 303qingdao303 -p 3030'
-alias shao2='sslocal -s 138.128.213.68  -m aes-256-cfb -k yeslozzo_w -p 3030' 
 alias adb='/opt/Android/Sdk/platform-tools/adb'
 #[Esc][h] man 当前命令时，显示简短说明
 alias run-help >&/dev/null && unalias run-help
