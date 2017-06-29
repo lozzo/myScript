@@ -2,13 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/lozzow/.oh-my-zsh
+ export ZSH=/home/lozzow/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME=""powerlevel9k/powerlevel9k""
-
+#ZSH_THEME="zeta"
+ZSH_THEME="random"
 # Uncomment the following line to use case-sensitive completion.
 #大小写区分
 CASE_SENSITIVE="true"
@@ -98,10 +98,11 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 #命令提示符
-RPROMPT=$(echo "$RED%D %T$FINISH")
-PROMPT=$(echo "$CYAN%n@$YELLOW%M:$GREEN%/$_YELLOW>$FINISH ")
+#RPROMPT=$(echo "$RED%D %T$FINISH")
+#PROMPT=$(echo "$CYAN%n@$YELLOW%M:$GREEN%/$_YELLOW>$FINISH ")
+
+
 
 #关于历史纪录的配置 {{{
 #历史纪录条目数量
@@ -299,7 +300,7 @@ alias p='sudo pacman-color'
 alias y='yaourt'
 alias h='htop'
 alias mc='cd /home/lozzow/game/minecraft &&java  -jar HMCL-2.2.8.jar  &&exit'
-alias adb='/opt/Android/Sdk/platform-tools/adb'
+#alias adb='/opt/Android/Sdk/platform-tools/adb'
 #[Esc][h] man 当前命令时，显示简短说明
 alias run-help >&/dev/null && unalias run-help
 autoload run-help
@@ -319,6 +320,5 @@ hash -d D="/home/ayumi/Documents"
 #####virtualenvwrapper 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
-source /usr/local/bin/virtualenvwrapper.sh
-
+source /usr/bin/virtualenvwrapper.sh
 
