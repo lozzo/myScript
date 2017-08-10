@@ -8,7 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="zeta"
-ZSH_THEME="random"
+ZSH_THEME="zeta"
 # Uncomment the following line to use case-sensitive completion.
 #大小写区分
 CASE_SENSITIVE="true"
@@ -320,5 +320,5 @@ hash -d D="/home/ayumi/Documents"
 #####virtualenvwrapper 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
-source /usr/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh 
 
