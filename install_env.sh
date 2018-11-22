@@ -21,4 +21,4 @@ mkdir -p /tmp/build-tmux
 tar -zxvf /tmp/tmux.tgz -C /tmp/build-tmux 
 cd /tmp/build-tmux/tmux-2.8 && ./configure && make
 sudo make install
-
+cp tmux.conf ~/.tmux.conf 
