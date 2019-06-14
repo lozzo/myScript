@@ -4,12 +4,12 @@ set -e
 HOME=/home/$USER
 sudo apt-get update
 sudo apt-get install -y zsh git htop screen python-pip curl build-essential cmake python-dev libevent-dev
-mkdir $HOME/.pip
+mkdir -p $HOME/.pip
 cp pip.conf $HOME/.pip/
 sudo pip install virtualenv virtualenvwrapper
 git config --global user.name "lozzo"
 git config --global user.email "wuyouget@gmail.com"
-mkdir ~/.vim/bundle 
+mkdir-p  ~/.vim/bundle 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp .vimrc ~/.vimrc
 mkdir ~/go 
