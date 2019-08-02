@@ -154,7 +154,10 @@ function histall { convhistory =(allhistory) |
 sed '/^.\{20\} *cd/i\\' }
 #使用 hist 查看当前目录历史纪录
 function hist { convhistory $HISTFILE }
- 
+ # tssh远程连接后自动启用tmux
+function tssh {
+	ssh -t $@ "tmux attach || tmux new";
+}
 #全部历史纪录 top50
 function top50 { allhistory | awk -F':[ 0-9]*:[0-9]*;' '{ $1="" ; print }' | sed 's/ /\n/g' | sed '/^$/d' | sort | uniq -c | sort -nr | head -n 50 }
  
